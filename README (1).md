@@ -235,7 +235,7 @@ Izvēlies vienu no 4.–9. uzdevuma. ĢEDD pierādījumiem jābūt divos failos:
 
 ## 1. Programmas apraksts
 
-Norādi faila nosaukumu, ievadi, sagaidāmo rezultātu un īsi paskaidro algoritma darbības.
+Faila nosaukums Summa no 1 līdz n, Lietotājs ievada vienu pozitīvu veselu skaitli.,Ja lietotājs ievada 5, programma aprēķina summu 1 + 2 + 3 + 4 + 5 un izvada rezultātu 15.
 
 ## 2. Izpildes izsekošana
 
@@ -244,10 +244,10 @@ Izvēlies vienu konkrētu ievadi un pieraksti mainīgo vērtības pa soļiem.
 ```markdown
 | Solis | Nosacījums | Mainīgie pirms | Veiktā darbība | Mainīgie pēc | Izvade |
 |------:|------------|-----------------|----------------|----------------|--------|
-| 0     | —          |                 | Sākums         |                |        |
-| 1     |            |                 |                |                |        |
-| 2     |            |                 |                |                |        |
-```
+| 0     |    -1       |    1             |  0+1        |     1          |  1      |
+| 1     |     1       |             1    |      1+2          |       3         | 3       |
+| 2     |      1      |              3   |    3+4            |      7          |   7     |
+| 3   |            |          7       |    7+8            |       15         |      15  |
 
 ## 3. Testa piemēri
 
@@ -256,17 +256,15 @@ Izveido vismaz četrus atšķirīgus testus.
 ```markdown
 | Testa veids | Ievade | Sagaidāmais rezultāts | Faktiskais rezultāts | Tests izturēts? |
 |-------------|--------|-----------------------|---------------------|-----------------|
-| Tipisks     |        |                       |                     |                 |
-| Robežgadījums |      |                       |                     |                 |
-| Tukša vai nederīga ievade | |                 |                     |                 |
+| Tipisks     |    5    |      5               |           5         |       JĀ        |
+| Robežgadījums |     1 |     1                |             1       |        JĀ       |
+| Tukša vai nederīga ievade | |      TUKŠA  |       nederiga ievade              |         nederiga ievade        |  jā
 | Papildu tests |      |                       |                     |                 |
 ```
 
 ## 4. Kļūda, pretpiemērs vai uzlabojums
 
-Ja tests atklāj kļūdu, pieraksti ievadi, sagaidāmo rezultātu, faktisko rezultātu, kļūdas cēloni un labojumu.
-
-Ja programma visus testus iztur, izvēlies agrāku kļūdainu `commit` vai paskaidro, kura ievade radītu kļūdu bez vienas no tavām pārbaudēm.
+Visas kļūdas ir novērstas
 
 **Ieteiktais commit:** `Pievienots algoritms un tā testi`
 
